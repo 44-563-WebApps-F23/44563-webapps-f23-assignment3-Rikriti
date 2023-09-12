@@ -25,7 +25,7 @@
       The table below provides 4 different sports, the reasons behind playing
       and the hours spent playing it.
     </p>
-    <table border="1" style="border-collapse: collapse;">
+    <table border="1" style="border-collapse: collapse">
       <tr>
         <th>Sports</th>
         <th>Reason for Playing this Sport</th>
@@ -52,5 +52,33 @@
         <td>30 mins</td>
       </tr>
     </table>
+    <hr />
+    <h3>Code Display</h3>
+    <pre>
+        <code>
+        &lt;!-- The main SVG where both shapes will be drawn --&gt; 
+        &lt;svg id=&quot;icons&quot; class=&quot;button-icons&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 32 32&quot;&gt; 
+        &lt;!-- The download icon --&gt; 
+        &lt;path id=&quot;download&quot; class=&quot;icon&quot; d=&quot;M28 16h-5l-7 7-7-7h-5l-4 8v2h32v-2l-4-8zM0 28h32v2h-32v-2zM18 10v-8h-4v8h-7l9 9 9-9h-7z&quot;&gt;&lt;/path&gt; 
+        &lt;!-- The checkmark icon --&gt; 
+        &lt;path id=&quot;checkmark&quot; class=&quot;icon&quot; d=&quot;M27 4l-15 15-7-7-5 5 12 12 20-20z&quot;&gt;&lt;/path&gt; &lt;/svg&gt;
+        </code>
+        /* The main SVG */
+        .button-icons {
+          width: 1.25em;
+        }
+        
+        /* The individual icons */
+        .icon {
+          fill: #fff;
+        }
+        
+        /* We hide the checkmark by default */
+        #checkmark {
+          visibility: hidden;
+        }
+
+        <blockquote>CSS/JS Icon morphing</blockquote><a href="https://stackoverflow.com/questions/28988665/css-js-icon-morphing"> Go to stackoverflow</a>
+    </pre>
   </body>
 </html>
